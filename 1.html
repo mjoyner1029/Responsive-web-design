@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Input Forms</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- External CSS file -->
+</head>
+<body>
+    <header>
+        <h1>HTML5 Input Forms</h1>
+        <nav>
+            <ul>
+                <li><a href="#email-form">Email Form</a></li>
+                <li><a href="#number-form">Number Form</a></li>
+                <li><a href="#date-form">Date Form</a></li>
+                <li><a href="#range-form">Range Form</a></li>
+                <li><a href="#color-form">Color Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Task 1: Email Input Form -->
+        <section id="email-form">
+            <h2>Email Input Form</h2>
+            <form>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Task 2: Number Input Form -->
+        <section id="number-form">
+            <h2>Quantity Input Form</h2>
+            <form>
+                <label for="quantity">Enter Quantity:</label>
+                <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="100" step="1" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Task 3: Date Input Form -->
+        <section id="date-form">
+            <h2>Date Input Form</h2>
+            <form>
+                <label for="date">Select a Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Task 4: Range Input Form -->
+        <section id="range-form">
+            <h2>Range Input Form</h2>
+            <form>
+                <label for="range">Select a Value (0-100):</label>
+                <input type="range" id="range" name="range" min="0" max="100" value="50" oninput="this.nextElementSibling.value = this.value">
+                <output>50</output>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Task 5 (BONUS): Color Input Form -->
+        <section id="color-form">
+            <h2>Color Input Form</h2>
+            <form>
+                <label for="color">Select a Color:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML5 Forms. All rights reserved.</p>
+    </footer>
+</body>
+</html>
